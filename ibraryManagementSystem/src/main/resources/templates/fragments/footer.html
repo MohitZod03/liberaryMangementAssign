@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #ffffff;
+        }
+        .footer a:hover {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer .social-icons a {
+            margin: 0 10px;
+            color: #ffffff;
+        }
+        .footer .social-icons a:hover {
+            color: #007bff;
+        }
+        .footer .footer-bottom {
+            background-color: #23272b;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<footer th:fragment="header">
+<div  class="footer">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Library St, Booktown</p>
+                <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@librarymanagement.com</p>
+            </div>
+
+            <!-- Useful Links -->
+            <div class="col-md-4">
+                <h5>Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/home"><i class="fas fa-angle-right"></i> Home</a></li>
+                    <li><a href="/books"><i class="fas fa-angle-right"></i> Books</a></li>
+
+                </ul>
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Library Management System. All rights reserved.</p>
+    </div>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

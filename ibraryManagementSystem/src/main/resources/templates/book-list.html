@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .action-btn {
+            display: flex;
+            justify-content: space-around;
+        }
+        .action-btn a {
+            margin: 0 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between mb-3">
+        <form class="form-inline" action="/search-book" method="get">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search by Name" aria-label="Search" name="name" th:value="${searchTerm}">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <p>
+            <a href="/add-book" class="btn btn-primary">Issue Book</a>
+        </p>
+    </div>
+
+    <div th:if="${#lists.isEmpty(books)}">
+        <h2>No Data Found</h2>
+    </div>
+
+    <div th:unless="${#lists.isEmpty(books)}">
+        <table class="table table-bordered">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">ISBN</th>
+                <th scope="col">Book Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Return Book</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="book : ${books}">
+                <td th:text="${book.isbn}"></td>
+                <td th:text="${book.name}"></td>
+                <td th:text="${book.description}"></td>
+                <td class="text-center">
+                    <a th:href="@{/book/{id}(id=${book.id})}" class="btn btn-primary">
+                        <i style="font-size:24px" class="fa">&#xf070;</i>
+                    </a>
+                </td>
+                <td class="text-center">
+                    <a th:href="@{/update-book/{id}(id=${book.id})}" class="btn btn-primary">
+                        <i style="font-size:24px" class="fa">&#xf044;</i>
+                    </a>
+                </td>
+                <td class="text-center">
+                    <a th:href="@{/remove-book/{id}(id=${book.id})}" class="btn btn-primary">
+                        <i style="font-size:24px" class="fa">&#xf014;</i>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
