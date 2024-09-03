@@ -21,7 +21,7 @@ public class BookController {
     // mapping for to get all book
 
     @RequestMapping("/books")
-    public String getAllBook(Model model){
+    public String getAllBooks(Model model){
         List<Book> bookList= bookService.findAllBooks();
         model.addAttribute("books",bookList);
 
@@ -86,6 +86,8 @@ public class BookController {
         model.addAttribute("books",bookService.findAllBooks());
         return "redirect:/books";
     }
+
+
 
     @GetMapping("/search-book")
     public String searchBook(@RequestParam(value = "name", required = false, defaultValue = "") String name, Model model) {
