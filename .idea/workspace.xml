@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eeb800e-55a5-4cbd-97e2-65b7cd565dab" name="Changes" comment="" />
+    <list default="true" id="7eeb800e-55a5-4cbd-97e2-65b7cd565dab" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ibraryManagementSystem/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ibraryManagementSystem/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ibraryManagementSystem/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ibraryManagementSystem/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,23 +23,27 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2lYK1PvKhPqD3Q3j4JvaIFlrEKC" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IbraryManagementSystemApplication.executor": "Run",
-    "Application.LibraryManagementSystemApplication.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mohit/OneDrive/Desktop/ibraryManagementSystem/ibraryManagementSystem/src/main/resources/templates"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IbraryManagementSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LibraryManagementSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mohit/OneDrive/Desktop/ibraryManagementSystem/ibraryManagementSystem/src/main/resources/templates&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mohit\OneDrive\Desktop\ibraryManagementSystem\ibraryManagementSystem\src\main\resources\templates" />
